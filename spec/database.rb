@@ -6,7 +6,7 @@ class Database
     @connection = PG.connect(conn)
   end
 
-  def db_query(query)
+  def db_query(query:)
     @connection.exec(query)
   end
 end
