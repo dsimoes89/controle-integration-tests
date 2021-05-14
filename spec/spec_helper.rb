@@ -1,5 +1,7 @@
 require "httparty"
-require_relative "../spec/support/database"
+require_relative "../spec/services/api"
+require_relative "./database"
+
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
